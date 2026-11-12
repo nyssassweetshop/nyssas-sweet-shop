@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f8">
+  <meta name="description" content="Nyssa's Sweet Shop — sweet treats made with love in Lubbock, Texas.">
+  <title>Nyssa's Sweet Shop | A Little Sweetness Goes a Long Way</title>
+  <style>
+    :root{--pink:#d97891;--pink-dark:#a94e69;--blush:#fff0f3;--cream:#fffaf5;--ink:#49343a;--muted:#806c72;--line:#f0dce1}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+    a{color:inherit}.topbar{text-align:center;padding:9px 16px;background:var(--pink-dark);color:white;font:600 12px/1.4 Arial,sans-serif;letter-spacing:.12em}
+    header{position:sticky;top:0;z-index:5;background:rgba(255,250,245,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+    .nav{max-width:1100px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:23px;color:var(--pink-dark);text-decoration:none;font-weight:bold}.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:.22em;text-align:center}
+    nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;font:600 12px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}nav a:hover{color:var(--pink-dark)}
+    .hero{padding:86px 22px 80px;text-align:center;background:radial-gradient(ellipse at 50% 15%,#fff 0,#fff6f7 48%,#fce9ee 100%);position:relative;overflow:hidden}
+    .hero:before,.hero:after{content:"♡";position:absolute;color:#e8b5c2;font-size:75px;opacity:.45}.hero:before{left:9%;top:35px;transform:rotate(-18deg)}.hero:after{right:10%;bottom:25px;transform:rotate(15deg)}
+    .eyebrow{color:var(--pink-dark);text-transform:uppercase;letter-spacing:.22em;font:700 11px Arial,sans-serif}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin:17px 0;font-weight:500}h1 span{color:var(--pink);font-style:italic}
+    .hero p{max-width:600px;margin:0 auto 28px;color:var(--muted);font-size:18px}
+    .button{display:inline-block;padding:14px 25px;border-radius:999px;background:var(--pink-dark);color:white;text-decoration:none;font:700 12px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--pink-dark);cursor:pointer;transition:.2s}
+    .button:hover{background:var(--pink);border-color:var(--pink);transform:translateY(-2px)}.button.secondary{background:transparent;color:var(--pink-dark);margin-left:8px}
+    section{padding:72px 22px}.wrap{max-width:1050px;margin:auto}.section-head{text-align:center;margin-bottom:35px}
+    h2{font-size:clamp(31px,4vw,43px);font-weight:500;margin:8px 0}.section-head p{color:var(--muted);margin:0 auto;max-width:570px}
+    .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.menu-card{background:white;border:1px solid var(--line);border-radius:18px;padding:25px 20px;text-align:center;box-shadow:0 8px 24px rgba(100,50,65,.04)}
+    .menu-card .symbol{font-size:30px}.menu-card h3{font-size:21px;font-weight:500;margin:8px 0 5px}.menu-card p{color:var(--muted);font:14px/1.6 Arial,sans-serif;margin:0}
+    .note{text-align:center;color:var(--muted);font:13px Arial,sans-serif;margin-top:22px}.story{background:var(--blush)}.story-inner{max-width:760px;margin:auto;text-align:center}.story-inner p{color:#715c63;font-size:17px}.heart{color:var(--pink);font-size:25px}
+    .order{background:#fff}.order-box{max-width:760px;margin:auto;background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,42px)}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:15px}label{display:block;font:700 11px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--pink-dark)}
+    input,select,textarea{width:100%;margin-top:7px;padding:13px 12px;border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink);font:15px Arial,sans-serif}
+    textarea{min-height:110px;resize:vertical}.full{grid-column:1/-1}.fineprint{color:var(--muted);font:12px/1.5 Arial,sans-serif;margin:12px 0 0}
+    .contact{text-align:center;background:var(--blush)}footer{padding:25px 20px;text-align:center;color:var(--muted);font:12px Arial,sans-serif}footer strong{color:var(--pink-dark)}
+    .hidden-field{position:absolute;left:-5000px}
+    @media(max-width:700px){.nav{flex-direction:column;gap:12px}nav{justify-content:center;gap:14px}.hero{padding:68px 18px}.hero:before{left:2%}.hero:after{right:2%}.menu-grid{grid-template-columns:1fr 1fr}form{grid-template-columns:1fr}.full{grid-column:auto}.button.secondary{margin:10px 0 0}}
+    @media(max-width:420px){.menu-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="topbar">MADE WITH LOVE IN LUBBOCK, TEXAS ♡</div>
+  <header><div class="nav">
+    <a class="brand" href="#home">Nyssa's Sweet Shop<small>A LITTLE SWEETNESS GOES A LONG WAY</small></a>
+    <nav aria-label="Main navigation"><a href="#menu">Our Treats</a><a href="#story">Our Story</a><a href="#order">Order</a><a href="#contact">Contact</a></nav>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="eyebrow">A little homemade happiness</div>
+      <h1>Life is sweeter<br>with <span>a treat.</span></h1>
+      <p>Thoughtful little treats, made with love and a whole lot of sweetness. Bringing smiles to Lubbock, one bite at a time.</p>
+      <a class="button" href="#order">Request an order</a><a class="button secondary" href="#menu">Explore the menu</a>
+    </section>
+    <section id="menu"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">The sweet stuff</div><h2>A treat for every kind of craving</h2><p>Perfect for celebrations, thoughtful gifts, holidays, or just because.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card"><div class="symbol">🍓</div><h3>Chocolate-Covered Strawberries</h3><p>Sweet strawberries dressed up in chocolate.</p></article>
+        <article class="menu-card"><div class="symbol">🍭</div><h3>Cake Pops</h3><p>Bite-sized cake treats made for sharing.</p></article>
+        <article class="menu-card"><div class="symbol">🎀</div><h3>Cake Sickles</h3><p>Pretty, cake-filled treats with a sweet finish.</p></article>
+        <article class="menu-card"><div class="symbol">☕</div><h3>Cocoa Bombs</h3><p>A cozy cup of chocolatey goodness.</p></article>
+        <article class="menu-card"><div class="symbol">🥨</div><h3>Chocolate-Covered Pretzels</h3><p>A delicious mix of sweet and salty.</p></article>
+        <article class="menu-card"><div class="symbol">💗</div><h3>Custom Treat Requests</h3><p>Have an occasion or idea in mind? Let's make it sweet.</p></article>
+      </div><p class="note">Menu availability, designs, and pricing may vary. Send an order request for details.</p>
+    </div></section>
+    <section class="story" id="story"><div class="story-inner"><div class="eyebrow">A little about us</div><h2>Made with love, shared with joy.</h2>
+      <p>Welcome to Nyssa's Sweet Shop! I'm excited to bring my love for baking to the Lubbock community. After spending 2–3 years baking in Odessa, I'm starting this sweet new chapter with one simple goal: making people happy, one treat at a time.</p>
+      <p>Whether you're celebrating a birthday, surprising someone special, or treating yourself, thank you for letting my little business be part of your moments.</p><div class="heart">♡</div>
+    </div></section>
+    <section class="order" id="order"><div class="section-head"><div class="eyebrow">Let's make it sweet</div><h2>Place an order request</h2><p>Tell me what you're dreaming up. I'll follow up to confirm availability, details, and pricing.</p></div>
+      <div class="order-box">
+        <form name="bakery-orders" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="bakery-orders">
+          <input type="hidden" name="subject" value="New order request — Nyssa's Sweet Shop">
+          <p class="hidden-field"><label>Leave this empty: <input name="bot-field"></label></p>
+          <div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Name"></div>
+          <div><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Best number to reach you"></div>
+          <div><label for="email">Email (optional)</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+          <div><label for="treat">What would you like?</label><select id="treat" name="treat" required><option value="">Choose a treat</option><option>Cake pops</option><option>Cake sickles</option><option>Cocoa bombs</option><option>Chocolate-covered strawberries</option><option>Chocolate-covered pretzels</option><option>Multiple treats / custom request</option></select></div>
+          <div><label for="quantity">Quantity</label><input id="quantity" name="quantity" placeholder="How many?"></div>
+          <div><label for="date">Date needed</label><input id="date" name="date-needed" type="date"></div>
+          <div class="full"><label for="details">Colors, theme & special instructions</label><textarea id="details" name="details" placeholder="Tell me what you have in mind..."></textarea></div>
+          <button class="button full" type="submit">Send my order request</button>
+        </form>
+        <p class="fineprint">This is an order request, not a confirmed booking. Nyssa will contact you to confirm availability, pricing, pickup/delivery details, and payment.</p>
+      </div>
+    </section>
+    <section class="contact" id="contact"><div class="eyebrow">Find us</div><h2>Local sweetness in Lubbock</h2><p>Based in the Kelsey Park area of Lubbock, Texas.</p><p>Have a question or a special request? Send an order request above to get started.</p></section>
+  </main>
+  <footer>© <span id="year"></span> <strong>Nyssa's Sweet Shop</strong> · Made with love in Lubbock, TX ♡</footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
